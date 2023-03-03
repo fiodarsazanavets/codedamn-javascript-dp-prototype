@@ -11,12 +11,6 @@ class CloneableObject {
         return this._internalData;
     }
 
-    clone() {
-        var clone = new CloneableObject(this._internalTitle);
-        clone._internalData = this._internalData;
-        return clone;
-    }
-
     constructor(title) {
         this._internalTitle = title;
         this._internalData = Math.random();
